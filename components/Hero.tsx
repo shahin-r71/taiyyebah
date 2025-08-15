@@ -3,20 +3,23 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
-import Image from 'next/image';
+// import Image from 'next/image';
+import Video from 'next-video';
+import startupVideo from '/videos/Taiyyebah spray Final.mp4';
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
+        {/* <Image
           src="/images/banners/Taiyyebah Bannner.png"
           alt="Taiyyebah Banner"
           fill
           className="object-cover"
           priority
-        />
+        /> */}
+        <Video src={startupVideo} muted loop autoPlay controls = {false} className="" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
