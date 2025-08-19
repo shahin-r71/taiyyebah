@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 // import Image from 'next/image';
 import Video from 'next-video';
-import startupVideo from '/videos/Taiyyebah spray Final.mp4';
+import startupVideo from '/videos/Taiyyebah_perfume.mp4';
 
 export default function Hero() {
   return (
